@@ -14,11 +14,12 @@
         display: grid;
         grid-template-columns: 60% 40%;
           background-color:  rgb(245,245,245);
+          margin-bottom: 20px;
       }
-      
+
       #ans-rightContainer img {
         width: 100%;
-        height: 97vh;
+        height: 90vh;
       }
 
       #ans-leftContainer form{
@@ -423,7 +424,7 @@
   </body>
   <script>
     document.querySelector(".ans-createAccBtn").addEventListener("click", setData);
-    var userCredArr = JSON.parse(localStorage.getItem("data")) || [];
+    var userCredArr = JSON.parse(localStorage.getItem("account-data")) || [];
 
     function setData() {
       event.preventDefault();
@@ -454,7 +455,6 @@
       userCredArr.push(userCredObj);
       localStorage.setItem("account-data", JSON.stringify(userCredArr));
       window.location.href = "signIn.html";
-      
     }
   </script>
 </html>
