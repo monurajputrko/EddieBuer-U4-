@@ -13,7 +13,234 @@
     z-index: 100;
 }
 
+/* outerwear page css */
 
+#outerwear-banner{
+    position: relative;
+}
+
+#outerwear-banner img{
+    width: 100%;
+}
+
+.outerwear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0s ease-in-out;
+}
+
+.outerwear-shop-women-btn {
+    position: absolute;
+    left: 11%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.outerwear-shop-men-btn {
+    position: absolute;
+    left: 23.5%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.outerwear-shop-btn:hover {
+        background-color: #222;
+        color: #fff;
+}
+
+#outerwear-heading{
+    text-align: center;
+}
+
+#outerwear-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#outerwear-card div{
+    flex-basis: calc((100% / 2) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#outerwear-card div img{
+    width: 100%;
+    position: relative;
+}
+
+#outerwear-card2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#outerwear-card2 div{
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#outerwear-card2 div img{
+    width: 100%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 500px) {
+    #outerwear-card div{
+        flex-basis: calc((100%) - 20px);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    #outerwear-card2 div{
+        flex-basis: calc((100%) - 20px);
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+
+
+/* new page css */
+#new-my-element {
+    position: relative;
+}
+
+#new-my-element img {
+    width: 100%;
+}
+
+.new-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.7vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0s ease-in-out;
+}
+
+.new-shop-women-btn {
+    left: 11.2%;
+    transform: translate(-50%, -50%);
+}
+
+.new-shop-men-btn {
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+
+.new-shop-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#new-heading h2 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#new-heading p {
+    margin-top: -1%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#new-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#new-card div {
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#new-card div img {
+    width: 100%;
+}
+
+.button-container {
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #222;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover::before {
+    opacity: 0.2;
+  }
+  
+  .women {
+    margin-right: 10px;
+  }
+  
+  .men {
+    margin-left: 10px;
+  }
+  
+
+@media screen and (max-width: 750px){
+    #new-card div {
+        flex-basis: calc((100% / 2));
+    }
+}
+@media screen and (max-width: 350px) {
+    #new-card div {
+        flex-basis: calc((100%));
+    }
+}
 /* Womens page css */
 
 #women-banner{
@@ -82,10 +309,16 @@
     #women-card div {
         flex-basis: calc((100% / 2) - 20px);
     }
+    #women-card div p {
+        font-size: 5vw;
+    }
 }
 @media screen and (max-width: 350px) {
     #women-card div {
         flex-basis: calc(100%);
+    }
+    #women-card div p {
+        font-size: 10vw;
     }
 }
 
