@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>new</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css?family=Helvetica+Neue&display=swap" rel="stylesheet">
+  <style>
+    #my-element {
+        position: relative;
+    }
+
+    #my-element img {
+        width: 100%;
+    }
+
+    .shop-btn {
+        position: absolute;
+        top: 70%;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #222;
+        background-color: #fff;
+        border: 2px solid #fff;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .shop-women-btn {
+        left: 10.1%;
+        transform: translate(-50%, -50%);
+    }
+
+    .shop-men-btn {
+        left: 12.1%;
+        transform: translate(50%, -50%);
+    }
+
+    .shop-btn:hover {
+        background-color: #222;
+        color: #fff;
+    }
+
+    #heading h2{
+        text-align: center;
+        font-size: 300%;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #heading p{
+        margin-top: -1%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #card{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #card div{
+        padding: 12px;
+    }
+    #card img{
+        width: 100%;
+    }
+
+    /*last button*/
+    #button {
+        margin-top: 1%;
+        text-align: center;
+    }
+
+    #button a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0.2s ease-in-out;
+    }
+
+    #button a:hover {
+    background-color: #fff;
+    color: #222;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="my-element">
+        <img src="https://eddiebauer.scene7.com/is/image/EBContent/230209_new_high-route_V2?$a8$" alt="banner">
+        <a class="shop-btn shop-women-btn" href="#">Shop Women</a>
+        <a class="shop-btn shop-men-btn" href="#">Shop Men</a>
+    </div>
+    <div id="heading">
+        <h2>We Know Rain</h2>
+        <p>No matter the forecast we’ve got you covered with high-tech</p>
+        <p>rainwear built for superior performance.</p>
+    </div>
+    <div id="card">
+        <div>
+            <img src="https://eddiebauer.scene7.com/is/image/EBContent/230209_new_cloud-cap_W_V1?$a8$" alt="c1">
+        </div>
+        <div>
+            <img src="https://eddiebauer.scene7.com/is/image/EBContent/230209_new_cloud-cap_M_V1?$a8$" alt="c2">
+        </div>
+        <div>
+            <img src="https://eddiebauer.scene7.com/is/image/EBContent/230209_new_rainfoil_W_V1?$a8$" alt="c3">
+        </div>
+        <div>
+            <img src="https://eddiebauer.scene7.com/is/image/EBContent/230209_new_rainfoil_M_V1?$a8$" alt="c4">
+        </div>
+    </div>
+    <div id="button">
+        <a href="#">Shop Women</a>
+        <a href="#">Shop Men</a>
+    </div>
+</body>
+</html>
