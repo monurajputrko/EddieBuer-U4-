@@ -7,7 +7,11 @@ document.getElementById("price").textContent="Total Price :"+sum
          function displayCartItems (addedTocart){
            document.getElementById("body").textContent=""
            addedTocart.map(function(el,i){
-              
+            // var div1=document.createElement("div");
+            // var div=document.createElement("div");
+            var image=document.createElement("img");
+            image.setAttribute("src",el.image_url);
+            image.setAttribute("alt",el.name);
 
               let tr=document.createElement("tr")
 
@@ -18,15 +22,20 @@ document.getElementById("price").textContent="Total Price :"+sum
               td2.textContent=el.price
 
               let td3=document.createElement("td")
-              td3.textContent=el.MRP
+              td3.textContent=el.strikedoffprice
 
               let td4=document.createElement("td")
               td4.textContent="Delete"
               td4.addEventListener("click",function(){
                deleteProduct(el,i)
               })
+              let td5=document.createElement("td")
 
-              tr.append(td1,td2,td3,td4)
+              var image=document.createElement("img");
+                image.setAttribute("src",el.image_url);
+                image.setAttribute("alt",el.name);
+              tr.append(image,td1,td2,td3,td4)
+                // div.append(tr)
               document.getElementById("body").append(tr)
            })
          }
