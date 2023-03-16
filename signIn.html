@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <style>
+      .ans-signInForm label {
+        display: flex;
+      }
+
+      .ans-signInForm input {
+        width: 400px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      .ans-createAccBtn {
+        border-style: none;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        width: 400px;
+        height: 38px;
+      }
+      .ans-createAccBtn:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+      
+
+      body {
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="ans-signInContainer">
+      <div class="ans-txtAndbtn">
+        <h2>Don't Have An Account</h2>
+        <!-- <button class="ans-createAccBtn">CREATE A NEW ACCOUNT</button> -->
+        <button
+          class="ans-createAccBtn"
+          onclick="window.location.href='SignUp.html';"
+        >
+          CREATE A NEW ACCOUNT
+        </button>
+      </div>
+      <hr style="width: 400px" />
+      <div class="ans-formAndBtn">
+        <h2>Sign In to your account</h2>
+        <form class="ans-signInForm">
+          <label for="ans-email">Email</label>
+          <input id="ans-email" type="email" placeholder="example@email.com" />
+          <label for="ans-password">Password</label>
+          <input id="ans-password" type="Password" placeholder="Password" />
+        </form>
+        <button class="ans-createAccBtn ans-signInBtn">SIGN IN</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.querySelector(".ans-signInBtn").addEventListener("click", getData);
+    var userCredArr = JSON.parse(localStorage.getItem("account-data")) || [];
+
+    function getData() {
+      event.preventDefault();
+
+      userCredArr.map(function (elem) {
+        var email = document.getElementById("ans-email").value;
+        var password = document.getElementById("ans-password").value;
+        if (email == elem.email && password == elem.password) {
+            window.location.href = "index.html";
+        } else if (email == "" && password == "") {
+           alert("Please Fill Your Deatils To Continue");
+        } 
+        else {
+          alert("Invalid credentials")
+        }
+      });
+    }
+  </script>
+</html>

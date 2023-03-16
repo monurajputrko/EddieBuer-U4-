@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="tempSigUp">
+      <form>
+        <input type="text" id="name" placeholder="name" />
+        <input type="email" id="email" placeholder="email" />
+        <input type="password" id="password" placeholder="password" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+  <script>
+    document.querySelector("form").addEventListener("submit", setData);
+    var userCredArr = JSON.parse(localStorage.getItem("data")) || [];
+
+    function setData() {
+      event.preventDefault();
+
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // to check user exists or not
+      for (var i = 0; i < userCredArr.length; i++) {
+        if (email == userCredArr[i].email) {
+          alert("Email Already Exists");
+          return;
+        }
+      }
+
+      // -------------------------------
+
+      var userCredObj = {
+        name: name,
+        email: email,
+        password: password,
+      };
+      userCredArr.push(userCredObj);
+      localStorage.setItem("account-data", JSON.stringify(userCredArr));
+    }
+  </script>
+
+</html>
