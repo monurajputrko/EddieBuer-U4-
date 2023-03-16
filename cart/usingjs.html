@@ -10,13 +10,15 @@
             width: 90%;
           }
         #data{
-          display: grid;
-          grid-template-columns: repeat(4,1fr);
+          display: flex;
+          flex-wrap: wrap;
+          /* grid-template-columns: repeat(3,1fr); */
+          justify-content: center;
           gap: 10px;
         }
         #data>div>div{
             display: flex;
-            justify-content: space-around;
+            
         }
         p+p{
             text-decoration: line-through;
@@ -24,9 +26,13 @@
      </Style>
 </head>
 <body>
+   
     <h2>Mens Page</h2>
     <a href="cartpage.html">Cart</a>
-    <div id="data"></div>
+    <div id="data">
+       
+    </div>
+    
 </body>
 </html>
 <script>

@@ -6,6 +6,9 @@
         padding-left: 5%;
         padding-bottom: 5%;
     }
+    img{
+        width: 100px;
+    }
     /* #form{
        
         margin-left: 250px;
@@ -16,6 +19,8 @@
         margin-top: 100px;
     }
     table {
+
+        background-color: #ffffff;
         
 font-family: arial, sans-serif;
 border-collapse: collapse;
@@ -23,14 +28,12 @@ width: 60%;
 }
 
 td, th {
-border: 1px solid #dddddd;
+    width: 100px;
+
 text-align: left;
 padding: 8px;
 }
 
-tr:nth-child(even) {
-background-color: #dddddd;
-}
 .mscenter {
 margin: auto;
 /* margin-top: -5%; */
