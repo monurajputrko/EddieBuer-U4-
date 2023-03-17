@@ -12,8 +12,614 @@
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
+/* clearance page css */
+#Clr-banner div{
+    background-color: #b41600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+#Clr-banner div1{
+    background-color: #b41600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 2vw;
+}
+
+#Clr-banner div2{
+    background-color: #b41600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1vw;
+}
+
+.CLR-shop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+    margin: 0.5em;
+    min-width: 8em;
+}
+
+.CLR-shop-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#Clr-women div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
 
 
+/* gear page css */
+
+.gear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+}
+
+.gear-shop-now-btn {
+    position: absolute;
+    left: 38.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.gear-shop-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+/* buttons */
+#gear1-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 10.5%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#gear2-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 21.3%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#gear3-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 75%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#gear4-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 53%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+/* gear 1 */
+#gear1-banner{
+    position: relative;
+}
+
+#gear1-banner div{
+    
+}
+
+#gear1-banner div img{
+    width: 100%;
+}
+
+/* gear 2 */
+#gear2-banner{
+    position: relative;
+}
+
+#gear2-banner div{
+    
+}
+
+#gear2-banner div img{
+    width: 100%;
+}
+
+/* gear 3 */
+#gear3-banner{
+    position: relative;
+}
+
+#gear3-banner div{
+    
+}
+
+#gear3-banner div img{
+    width: 100%;
+}
+
+/* gear 4 */
+#gear4-banner{
+    position: relative;
+}
+
+#gear4-banner div{
+    
+}
+
+#gear4-banner div img{
+    width: 100%;
+}
+
+/* gear 5 */
+#gear5-banner{
+    position: relative;
+    text-align: center;
+}
+
+#gear5-banner div{
+    
+}
+
+#gear5-banner div img{
+    width: 50%;
+}
+
+/* sale */
+#sale {
+    background-color: #0170bf;
+    padding: 10px;
+}
+#sale a {
+    text-align: center;
+}
+
+#sale {
+    text-align: center;
+}
+
+#sale h3 {
+    color: #FFFFFF;
+    font-family: Interstate;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+}
+#sale a {
+    color: #FFFFFF;
+    font-family: Interstate;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+
+}
+
+@media screen and (max-width: 750px) {
+    #gear5-banner div img {
+        width: 100%;
+    }
+}
+
+/* footwear page css */
+
+.footwear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+}
+
+.footwear-shop-now-btn {
+    position: absolute;
+    left: 38.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.footwear-shop-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+/* footwear2 buttons */
+#fw2-banner .footwear-shop-women-btn {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#fw2-banner .footwear-shop-men-btn {
+    position: absolute;
+    left: 23.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fttowear3 buttons */
+#fw3-banner .footwear-shop-women-btn {
+    position: absolute;
+    left: 50.5%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+#fw3-banner .footwear-shop-men-btn {
+    position: absolute;
+    left: 62%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/* below flex */
+#footwear-flex .footwear-shop-women-btn {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+#footwear-flex .footwear-shop-men-btn {
+    position: absolute;
+    left: 70%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+/* fw1 */
+#fw1-banner{
+    position: relative;
+}
+
+#fw1-banner div{
+    
+}
+
+#fw1-banner div img{
+    width: 100%;
+}
+
+/* fw2 */
+#fw2-banner{
+    position: relative;
+}
+
+#fw2-banner div{
+    
+}
+
+#fw2-banner div img{
+    width: 100%;
+}
+
+/* fw3 */
+#fw3-banner{
+    position: relative;
+}
+
+#fw3-banner div{
+    
+}
+
+#fw3-banner div img{
+    width: 100%;
+}
+/* footwear heading */
+#footwear-heading{
+    text-align: center;
+}
+
+#footwear-heading h3{
+    font-size: 2.5vw;
+}
+#footwear-heading p{
+    font-size: 1.5vw;
+    margin: 0vw;
+}
+
+/* footwear */
+#footwear-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#footwear-flex div {
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#footwear-flex div img {
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 750){
+    #footwear-flex div {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+}
+
+@media screen and (max-width: 375){
+    #footwear-flex div {
+        flex-basis: calc((100%));
+    }
+}
+
+/* outerwear page css */
+
+#outerwear-banner{
+    position: relative;
+}
+
+#outerwear-banner img{
+    width: 100%;
+}
+
+.outerwear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0s ease-in-out;
+}
+
+.outerwear-shop-women-btn {
+    position: absolute;
+    left: 11%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.outerwear-shop-men-btn {
+    position: absolute;
+    left: 23.5%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.outerwear-shop-btn:hover {
+        background-color: #222;
+        color: #fff;
+}
+
+#outerwear-heading{
+    text-align: center;
+}
+
+#outerwear-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#outerwear-card div{
+    flex-basis: calc((100% / 2) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#outerwear-card div img{
+    width: 100%;
+    position: relative;
+}
+
+#outerwear-card2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#outerwear-card2 div{
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#outerwear-card2 div img{
+    width: 100%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 500px) {
+    #outerwear-card div{
+        flex-basis: calc((100%) - 20px);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    #outerwear-card2 div{
+        flex-basis: calc((100%) - 20px);
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+
+
+/* new page css */
+#new-my-element {
+    position: relative;
+}
+
+#new-my-element img {
+    width: 100%;
+}
+
+.new-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.7vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0s ease-in-out;
+}
+
+.new-shop-women-btn {
+    left: 11.2%;
+    transform: translate(-50%, -50%);
+}
+
+.new-shop-men-btn {
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+
+.new-shop-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#new-heading h2 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#new-heading p {
+    margin-top: -1%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#new-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#new-card div {
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#new-card div img {
+    width: 100%;
+}
+
+.button-container {
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #222;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover::before {
+    opacity: 0.2;
+  }
+  
+  .women {
+    margin-right: 10px;
+  }
+  
+  .men {
+    margin-left: 10px;
+  }
+  
+
+@media screen and (max-width: 750px){
+    #new-card div {
+        flex-basis: calc((100% / 2));
+    }
+}
+@media screen and (max-width: 350px) {
+    #new-card div {
+        flex-basis: calc((100%));
+    }
+}
 /* Womens page css */
 
 #women-banner{
@@ -82,10 +688,16 @@
     #women-card div {
         flex-basis: calc((100% / 2) - 20px);
     }
+    #women-card div p {
+        font-size: 5vw;
+    }
 }
 @media screen and (max-width: 350px) {
     #women-card div {
         flex-basis: calc(100%);
+    }
+    #women-card div p {
+        font-size: 10vw;
     }
 }
 
