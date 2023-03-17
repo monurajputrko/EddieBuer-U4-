@@ -1,5 +1,7 @@
 let addedTocart=JSON.parse(localStorage.getItem("cartProduct"))||[]
 document.getElementById("items").textContent="Total Items :"+addedTocart.length
+var xm=addedTocart.length;
+localStorage.setItem("cartProduct", JSON.stringify(cartarr));
 var sum= addedTocart.reduce((acc,el)=>parseInt(acc)+parseInt(el.price),0);
 document.getElementById("price").textContent="Total Price :"+sum   
          displayCartItems (addedTocart)
@@ -21,12 +23,12 @@ document.getElementById("price").textContent="Total Price :"+sum
               let td2=document.createElement("td")
               td2.textContent=el.price
 
-              let td3=document.createElement("td")
-              td3.textContent=el.strikedoffprice
+              // let td3=document.createElement("td")
+              // td3.textContent=el.strikedoffprice
 
-              let td4=document.createElement("td")
-              td4.textContent="Delete"
-              td4.addEventListener("click",function(){
+              let td3=document.createElement("td")
+              td3.textContent="Delete"
+              td3.addEventListener("click",function(){
                deleteProduct(el,i)
               })
               let td5=document.createElement("td")
@@ -34,7 +36,7 @@ document.getElementById("price").textContent="Total Price :"+sum
               var image=document.createElement("img");
                 image.setAttribute("src",el.image_url);
                 image.setAttribute("alt",el.name);
-              tr.append(image,td1,td2,td3,td4)
+              tr.append(image,td1,td2,td3)
                 // div.append(tr)
               document.getElementById("body").append(tr)
            })
