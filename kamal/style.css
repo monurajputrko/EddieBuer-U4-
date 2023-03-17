@@ -12,6 +12,71 @@
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
+/* clearance page css */
+#Clr-banner div{
+    background-color: #b41600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+#Clr-banner div1{
+    background-color: #b41600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 2vw;
+}
+
+#Clr-banner div2{
+    background-color: #b41600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1vw;
+}
+
+.CLR-shop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+    margin: 0.5em;
+    min-width: 8em;
+}
+
+.CLR-shop-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#Clr-women div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+
 /* gear page css */
 
 .gear-shop-btn {
@@ -168,6 +233,12 @@
 
 }
 
+@media screen and (max-width: 750px) {
+    #gear5-banner div img {
+        width: 100%;
+    }
+}
+
 /* footwear page css */
 
 .footwear-shop-btn {
@@ -307,6 +378,18 @@
 #footwear-flex div img {
     width: 100%;
     position: relative;
+}
+
+@media screen and (max-width: 750){
+    #footwear-flex div {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+}
+
+@media screen and (max-width: 375){
+    #footwear-flex div {
+        flex-basis: calc((100%));
+    }
 }
 
 /* outerwear page css */
