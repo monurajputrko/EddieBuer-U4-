@@ -107,10 +107,11 @@
           <i class="fa fa-search" style="font-size: 22px"></i>
         </div>
         <div class="ans-logoBox">
-          <img src="images/logo.png" alt="" />
+          <a href="index.html"><img src="images/logo.png" alt=""/></a>
+          <!-- <img src="images/logo.png" alt="" /> -->
         </div>
         <div class="cartBox">
-          <i class="fa fa-shopping-bag" style="font-size: 24px"></i>
+          <i class="fa fa-shopping-bag" style="font-size: 24px"></i> <span id="ans-cart-qty"></span>
         </div>
       </section>
 
@@ -176,7 +177,7 @@
               <input type="email" name="email" id="email" />
             </div>
             <div>
-              <p>Password</p>
+              <p>Password*</p>
               <input type="password" id="password" />
             </div>
             <div>
@@ -456,5 +457,8 @@
       localStorage.setItem("account-data", JSON.stringify(userCredArr));
       window.location.href = "signIn.html";
     }
+
+
+
   </script>
 </html>

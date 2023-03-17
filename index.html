@@ -45,10 +45,11 @@
         <i class="fa fa-search" style="font-size: 22px"></i>
       </div>
       <div class="ans-logoBox">
-        <img src="images/logo.png" alt="" />
+        <a href="index.html"><img src="images/logo.png" alt=""/></a>
       </div>
       <div class="cartBox">
         <i class="fa fa-shopping-bag" style="font-size: 24px"></i>
+        <span id="ans-cart-qty"></span>
       </div>
     </section>
 
@@ -138,6 +139,7 @@
       </div>
       <div class="todayOnlyImages">
         <img src="images/todayOnly.gif" alt="3 images" />
+        <!-- <img src="images/m_230314_hp_flash_V2.gif" alt=""> -->
       </div>
     </div>
     <!-- todayOnlyContainer ends here -->
@@ -361,7 +363,8 @@
           <h4>BE THE FIRST TO KNOW</h4>
           <span id="firstspan"> Earn rewards and be the first to hear about sales and special offers.</span>
           <br>
-          <a href=""><button id="signup">SIGN UP</button></a>
+          <!-- <a href=""><button id="ans-signup-logoutButton">SIGN UP</button></a> -->
+          <button id="ans-signup-logoutButton" onclick="ansFooterBtn()" ></button>
           <br>
           <br>
           <br>
@@ -460,6 +463,34 @@
   } else {
     userNameDisplay.textContent = "Sign In / Sign Up";
   }
+
+  const footerBtn = document.getElementById("ans-signup-logoutButton");
+  if (username) {
+    footerBtn.textContent =  "Log Out";
+  } else {
+    footerBtn.textContent = "Sign Up";
+  }
+
+  // function ansFooterBtn(){
+  //   if(footerBtn.textContent == "Log Out"){
+  //     window.location.href='signIn.html';
+  //   } else if( footerBtn.textContent == "Sign Up"){
+  //     window.location.href='signUp.html';
+  //   }
+  // }
+  function ansFooterBtn(){
+    console.log("clicked")
+  if (footerBtn.textContent == "Log Out"){
+    window.location.href= "signIn.html";
+    localStorage.removeItem('username');
+  } else if (footerBtn.textContent == "Sign Up"){
+    window.location.href = "SignUp.html";
+  }
+}
+
+    // for cartbox qty
+    document.getElementById("ans-cart-qty").textContent = "";
+
 </script>
 
 </html>
