@@ -12,6 +12,302 @@
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
+/* gear page css */
+
+.gear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+}
+
+.gear-shop-now-btn {
+    position: absolute;
+    left: 38.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.gear-shop-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+/* buttons */
+#gear1-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 10.5%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#gear2-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 21.3%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#gear3-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 75%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#gear4-banner .gear-shop-now-btn {
+    position: absolute;
+    left: 53%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+/* gear 1 */
+#gear1-banner{
+    position: relative;
+}
+
+#gear1-banner div{
+    
+}
+
+#gear1-banner div img{
+    width: 100%;
+}
+
+/* gear 2 */
+#gear2-banner{
+    position: relative;
+}
+
+#gear2-banner div{
+    
+}
+
+#gear2-banner div img{
+    width: 100%;
+}
+
+/* gear 3 */
+#gear3-banner{
+    position: relative;
+}
+
+#gear3-banner div{
+    
+}
+
+#gear3-banner div img{
+    width: 100%;
+}
+
+/* gear 4 */
+#gear4-banner{
+    position: relative;
+}
+
+#gear4-banner div{
+    
+}
+
+#gear4-banner div img{
+    width: 100%;
+}
+
+/* gear 5 */
+#gear5-banner{
+    position: relative;
+    text-align: center;
+}
+
+#gear5-banner div{
+    
+}
+
+#gear5-banner div img{
+    width: 50%;
+}
+
+/* sale */
+#sale {
+    background-color: #0170bf;
+    padding: 10px;
+}
+#sale a {
+    text-align: center;
+}
+
+#sale {
+    text-align: center;
+}
+
+#sale h3 {
+    color: #FFFFFF;
+    font-family: Interstate;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+}
+#sale a {
+    color: #FFFFFF;
+    font-family: Interstate;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+
+}
+
+/* footwear page css */
+
+.footwear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+}
+
+.footwear-shop-now-btn {
+    position: absolute;
+    left: 38.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.footwear-shop-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+/* footwear2 buttons */
+#fw2-banner .footwear-shop-women-btn {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#fw2-banner .footwear-shop-men-btn {
+    position: absolute;
+    left: 23.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fttowear3 buttons */
+#fw3-banner .footwear-shop-women-btn {
+    position: absolute;
+    left: 50.5%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+#fw3-banner .footwear-shop-men-btn {
+    position: absolute;
+    left: 62%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/* below flex */
+#footwear-flex .footwear-shop-women-btn {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+#footwear-flex .footwear-shop-men-btn {
+    position: absolute;
+    left: 70%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+/* fw1 */
+#fw1-banner{
+    position: relative;
+}
+
+#fw1-banner div{
+    
+}
+
+#fw1-banner div img{
+    width: 100%;
+}
+
+/* fw2 */
+#fw2-banner{
+    position: relative;
+}
+
+#fw2-banner div{
+    
+}
+
+#fw2-banner div img{
+    width: 100%;
+}
+
+/* fw3 */
+#fw3-banner{
+    position: relative;
+}
+
+#fw3-banner div{
+    
+}
+
+#fw3-banner div img{
+    width: 100%;
+}
+/* footwear heading */
+#footwear-heading{
+    text-align: center;
+}
+
+#footwear-heading h3{
+    font-size: 2.5vw;
+}
+#footwear-heading p{
+    font-size: 1.5vw;
+    margin: 0vw;
+}
+
+/* footwear */
+#footwear-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#footwear-flex div {
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#footwear-flex div img {
+    width: 100%;
+    position: relative;
+}
 
 /* outerwear page css */
 
