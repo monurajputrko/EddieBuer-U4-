@@ -1,0 +1,167 @@
+#main-product-page{
+  display: flex;
+
+}
+#shubh-first-div{
+    width: 20%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    height: 500px;
+   }
+
+   #shubh-first-div select{
+    background-color: rgb(243,244,246);
+   }
+   #shubh-refine > option{
+     margin-top: 10px;
+   }
+
+   #shubh-first-div div>select{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    color:rgb(86, 90, 92);
+    padding: 10px;
+    border: none;
+   }
+   #shubh-product-head{
+    justify-content: space-between;
+   }
+   
+   #shubh-product-head{
+    display: flex;
+    width: 73%;
+    margin-left: 20%;
+    margin-bottom: -50px;
+   }
+   #shubh-product-head select{
+    width: 120%;
+    height: 50px;
+    font-size: 18px;
+    color:rgb(86, 90, 92);
+    border: rbg(86, 90, 92);
+    padding: 10px;
+   }
+   #shubh-product-head #shubh-clearAll{
+     font-size: 18px;
+     margin-top: 20px;
+     color: rgb(86, 90, 92);
+     text-decoration: none;
+  
+   }
+   .shubham-sort{
+    font-size: 25px;
+    color:rgb(86, 90, 92);
+    margin: auto;
+   }
+   #shubh-sortdiv{
+    display: flex;
+   }
+   #shubh-second-div{
+    width: 90%;
+   }
+
+   #shubh-first-div #shubh-sortby{
+    margin-right: 85px;
+   }
+
+   #shubh-second-div{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: auto;
+        width: 90%; 
+        margin-top: 80px;
+        margin-left: 20px;
+    } 
+    #shubh-second-div>div{
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    }
+    #shubh-second-div>div:hover{
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    #shubh-second-div>div{
+      width: 80%;
+    }
+    #shubh{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color:rgb(86, 90, 92);
+    border: rbg(86, 90, 92);
+    padding: 10px;
+    border: none;
+    margin-bottom: 8px;
+    }
+     #shubh-second-div #shubh-proimg{
+        width: 100%;
+        height: 350px;
+        align-items: center;
+    }
+    #shubh-h4-prod{
+      color: rgb(86, 90, 92);
+      font-size: 16px;
+      margin-bottom: -1px;
+      margin-left: 8px;
+    }
+    div>div+ #shubh-MRP{
+      display: inline; 
+      color: rgb(86, 90, 92);
+      font-size:20px;
+      margin-left: 8px;
+      text-decoration: line-through;
+      
+      
+    }
+    #shubh-MRP+#shubh-prod-price{
+      display: inline; 
+      color: red;
+      font-size: 20px;
+      margin-left: 7px;
+      
+    }
+    #shubh-addtocart-btn{
+      display: block;
+      margin: auto;
+      padding: 7px;
+      margin-bottom: 10px;
+      color:rgb(50, 51, 52); 
+      margin-left: 70%;
+      margin-top: -30px;
+    }
+    #shubh-addtocart-btn:hover{
+      border-color: black;
+      color: red;
+      font-weight: bold;
+    
+    }
+    p+#stardiv{
+      margin-left: 7px;
+    }
+    #star{
+      width: 15px;
+      height: 15px;
+    }
+
+    @media only screen and (min-width: 500px) and (max-width:800px){
+      #shubh-second-div{
+      display: grid;
+      grid-template-columns:repeat(2, 1fr) ;
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 100px) and (max-width:499px) {
+    #shubh-second-div{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      margin: auto;
+      width: 100%;
+    }
+    #shubh-product-head{
+      margin-bottom: 50px;
+    }
+   
+    
+  }
