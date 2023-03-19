@@ -42,11 +42,12 @@
     <!-- section 3 -->
     <section class="searchLogoCart">
       <div class="ans-searchBox">
-        <input type="text" placeholder="Search" />
-        <i class="fa fa-search" style="font-size: 22px"></i>
+        <input type="text" id="searchText" placeholder="Search" />
+        <!-- <i class="fa fa-search" style="font-size: 22px"></i> -->
+        <span onclick="searchText()"><i class="fa fa-search" style="font-size: 22px"></i></span>
       </div>
       <div class="ans-logoBox">
-        <a href="index.html"><img src="images/logo.png" alt=""/></a>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
       </div>
       <div class="cartBox">
         <i class="fa fa-shopping-bag" style="font-size: 24px"></i>
@@ -372,7 +373,7 @@
           <span id="firstspan"> Earn rewards and be the first to hear about sales and special offers.</span>
           <br>
           <!-- <a href=""><button id="ans-signup-logoutButton">SIGN UP</button></a> -->
-          <button id="ans-signup-logoutButton" onclick="ansFooterBtn()" ></button>
+          <button id="ans-signup-logoutButton" onclick="ansFooterBtn()"></button>
           <br>
           <br>
           <br>
@@ -467,31 +468,42 @@
   const userNameDisplay = document.getElementById("userNameDisplay");
 
   if (username) {
-    userNameDisplay.textContent =  username;
+    userNameDisplay.textContent = username;
   } else {
     userNameDisplay.textContent = "Sign In / Sign Up";
   }
 
   const footerBtn = document.getElementById("ans-signup-logoutButton");
   if (username) {
-    footerBtn.textContent =  "Log Out";
+    footerBtn.textContent = "Log Out";
   } else {
     footerBtn.textContent = "Sign Up";
   }
 
-  function ansFooterBtn(){
+  function ansFooterBtn() {
     console.log("clicked")
-  if (footerBtn.textContent == "Log Out"){
-    window.location.href= "signIn.html";
-    localStorage.removeItem('username');
-  } else if (footerBtn.textContent == "Sign Up"){
-    window.location.href = "SignUp.html";
+    if (footerBtn.textContent == "Log Out") {
+      window.location.href = "signIn.html";
+      localStorage.removeItem('username');
+    } else if (footerBtn.textContent == "Sign Up") {
+      window.location.href = "SignUp.html";
+    }
   }
-}
 
-    // for cartbox qty
-    document.getElementById("ans-cart-qty").textContent = "";
+  // for cartbox qty
+  document.getElementById("ans-cart-qty").textContent = "";
 
+  // for search button
+  function searchText() {
+    var searchText = document.getElementById("searchText").value;
+    searchText = searchText.toLowerCase();
+    if (searchText == "men" || searchText == "mens") {
+      window.location.href = "mensproducts.html";
+    } else if (searchText == "women" || searchText == "womens") {
+      window.location.href = "womenproducts.html";
+    } else if (searchText == "kid" || searchText == "kids") {
+      window.location.href = "kidsproducts.html";
+    }
 </script>
 
 </html>
