@@ -1,0 +1,289 @@
+.chat-icon {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 15px;
+    background-color: #fafffc00;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+@media screen and (max-width: 700px){
+    #kml-pageContainer{
+        margin-top: 100%;
+    }
+}
+
+/* header css */
+*{
+    margin-left:0 ;
+    margin-right: 0;
+}
+.ans-header{
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        background-color: white;
+        height: 200px;
+}
+.centerContainer{
+    margin-top: 240px;
+}
+/* for section 1 */
+.ans-accessibility {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* for section 2 */
+
+.ans-offersSec {
+    background-color: rgb(52, 50, 50);
+    color: white;
+    padding: 0px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stores-sInsUp {
+    display: flex;
+}
+
+.stores-sInsUp a {
+    text-decoration: none;
+    color: white;
+}
+
+.storesLink {
+    margin-right: 30px;
+}
+
+/* section 3 */
+.searchLogoCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+}
+
+.searchLogoCart img {
+    width: 200px;
+}
+
+.ans-logoBox {
+    width: 400px;
+}
+
+.searchLogoCart input {
+    border: none;
+    border-bottom-style: groove;
+}
+
+/* for section 4 */
+#ans-navbarBox{
+    width: 100%;
+}
+ .ans-navList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 160px;
+    padding: 10px 0;
+    width: 100%;
+    margin: auto;
+}
+
+.ans-navList>li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.ans-navList a {
+    text-decoration: none;
+    color: rgb(52, 50, 50);
+}
+
+/* for responsiveness */
+@media screen and (max-width: 820px) {
+    
+     /* ----------header starts here-------------- */
+     .ans-header{
+        height: 239px;
+     }
+    .ans-accessibility{
+        font-size: 14px;
+    }
+    /* for section 2 */
+    .rewardsonP{
+        font-size: 14px;
+    }
+    .ans-viewOffers>h5{
+        font-size: 11px;
+    }
+    .stores-sInsUp{
+        font-size: 10px;
+    }
+    .ans-logoBox{
+        margin-left: 50px;
+    }
+    /* for navbar */
+    .ans-offersSec{
+        background-color: #4295a5;
+    }
+    .ans-navList>li {
+        list-style-type: none;
+        margin: 6px 9px;
+    }
+    #locationSymbol-ans{
+       display: none;
+    }
+    /* ----------header ends here-------------- */
+}
+
+/* for smaller screen */
+@media screen and (max-width: 430px) {
+    /* for header */
+
+    .ans-header{
+        position: static;
+        height: 30px;
+    }
+
+    .ans-logoBox>img{
+        width: 150px;
+    }
+    .ans-searchBox{
+        width: 50px;
+    }
+    .ans-searchBox input{
+        width: 70px;
+    }
+
+    .rewardsonP{
+        font-size: 8px;
+    }
+    .ans-viewOffers> h5{
+        font-size: 7px;
+    }
+    .stores-sInsUp p{
+        font-size: 8px;
+    }
+
+
+    /* headre ends here */
+    
+
+
+}
+
+
+
+/* _________________________________________________fottter css ________________________________*/
+        /* for upper */
+        .footer-section-container-upper img {
+            width: 40px;
+            margin-right: 20px;
+        }
+
+        .footer-section-container-upper {
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .footer-section-container-upper>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* for lower*/
+        .ans-footerLowerSection img {
+            width: 20px;
+        }
+
+        .ans-footerLowerSection {
+            display: grid;
+            grid-template-columns: 15% 15% 15% 15% 15%;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* for last */
+        .ans-footer-lastSection {
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        footer{
+            background-color: rgb(245,245,245);
+            
+        }
+
+        footer a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        
+      footer button{
+        width: 200px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: white;
+        line-height: 19px;
+        background-color: rgb(51,51,51);
+
+     }
+     footer button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: black;
+     }
+     #signup img{
+        margin-top: 20px;
+     }
+
+        /* for medium screen */
+        @media screen and (max-width: 800px) {
+            .footer-section-container-upper {
+                grid-template-columns: 35% 35%;
+            }
+
+            .ans-footerLowerSection {
+                grid-template-columns: 40% 40%;
+                justify-content: space-around;
+                margin-left: 80px;
+            }
+        }
+
+        /* for small screen */
+        @media screen and (max-width: 500px){
+            .footer-section-container-upper {
+                grid-template-columns: 80%;
+            }
+            .ans-footerLowerSection {
+                grid-template-columns: 80%;
+                justify-content: space-around;
+                margin-left: 80px;
+            }
+            .ans-footer-lastSection {
+            font-size: 10px;
+        }
+        .termsAndConditions{
+            font-size: 6px;
+        }
+
+        }
+
+        /* ________________________________________ */
