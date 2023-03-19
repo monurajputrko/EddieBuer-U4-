@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+            
+#Maindiv
+{
+    display: flex;
+    justify-content: space-around;
+}
+#Maindiv > #left >h2
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Btn
+{
+    width: 50%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    font-size: medium;
+}
+.ip
+{
+    width: 45%;
+    padding: 10px;
+    margin-top: 5px;
+}
+.ip2
+{
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+}
+#left
+{
+    font-weight: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding-left: 15px;
+}
+/* #right > div:first-child
+{
+    background-color: rgb(245,245,245);
+} */
+#right
+{
+    width: 23%;
+    margin-top: 9%;
+    margin-bottom: 87%;
+    
+}
+#right a
+{
+    width: 100%;
+    padding-left:116px;
+    padding-right: 110px;
+    padding-bottom: 8px;
+    color: rgb(56, 54, 54);
+    padding-top: 10px;
+}
+#right > div >h3{
+    margin:40px;
+}
+#left >p> #span {
+    font-weight: lighter;
+    text-decoration: underline;
+   
+}
+#left > p >#span2 {
+    font-weight: lighter;
+}
+#left1
+{
+    margin: auto;
+    margin-top: 30px;
+    line-height: 4px;
+    font-weight: lighter;
+    color: #4c4a4a;;
+}
+
+#left3 > #left3post img
+{
+    width:45%;
+    height:50px;
+    margin-top: 10px;
+}
+
+
+.Btn2
+{
+    width: 48%;
+    padding: 20px;
+    margin-top: 12px;
+    margin-right: 6px;
+    background-color: white;
+    color: #524949;
+}
+
+#up
+{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(245,245,245);
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+
+#down
+{
+    border: 1px solid grey;
+    padding: 12px;
+}
+#subdown
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+#applyreward{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+#subdown img
+{
+    width: 70px;
+    height: 70px;
+}
+#div0 
+{
+    display: flex;
+    gap: 40px;
+}
+.iz{
+    width: 45%;
+    height: 40px;
+}
+#left3Btn{
+    width: 45%;
+    height: 50px;
+    margin-left: 25px;
+    text-decoration: none;
+}
+#left3Btn>a{
+    text-decoration: none;
+    color: white;
+}
+#ref
+{
+    text-align: center;
+    border: none;
+    padding: 10px;
+    padding: 10px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@media screen and (max-width: 540px) {
+  #Maindiv {
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+  }
+  #right {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .ip, .ip2, .iz {
+    width: 100%;
+  }
+  #left3post img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 820px) {
+  #Maindiv {
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+  }
+  #right {
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  #left3post img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  #Maindiv {
+    display: flex;
+    justify-content: space-around;
+  }
+  #left {
+    width: 60%;
+  }
+  #right {
+    width: 30%;
+    margin-top: 9%;
+    margin-bottom: 87%;
+  }
+  #left3post img {
+    width: 45%;
+  }
+}
+#Maindiv, #left, #right, .ip, .ip2, .iz {
+  box-sizing: border-box;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="Maindiv">
+        <div id="left">
+            <h2>Secure Checkout🔒</h2>
+            <p><span id="span">Sign in</span>&nbspto your account to save time and earn rewards.
+            <span id="span2">| No Account? Sign up now</span></p>
+            <h3>1.SHIPPING AND BILLING ADDRESS</h3>
+            <hr>
+            <p>+Add my Adventure Rewards Number</p>
+            <div id="left1">
+            
+            <div id="form1">
+            <form >
+                <input id="firstName" class="ip" type="text" placeholder="First Name"/>
+                <input id="lastName" class="ip" type="text" placeholder="Last Name"/><br><br>
+                <input id="personAddress" class="ip2" type="text" placeholder="Address"/><br><br>
+                <input id="optional" class="ip2" type="text" placeholder="Unit No. floor Optional"/><br><br>
+                <input id="personCity" class="ip" type="text" placeholder="City"/>
+                <select id="State"  class="iz" placeholder="State/Region">
+                    <option value="">State/Region</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Las Vegas">Las vegas</option>
+                    <option value="California">California</option>
+                    <option value="Silicon valley">Silicon Valley</option>
+                </select><br><br>
+                <input id="postalcode" class="ip" type="text" placeholder="ZIP/Postal Code"/>
+                <input id="mobileNo" class="ip" type="number" placeholder="Phone"/><br><br>
+                <input id="email" class="ip2" type="email" placeholder="Email"/><br><br>
+            </form>
+            </div>
+            <input type="checkbox" id="check1" onclick="myFunction()"/>
+            <label for="check1"> Billing Address same as Shipping Address</label><br><br>
+            <input type="checkbox" id="check2">
+            <label for="check1"> Sign up email and special offers</label><br><br>
+            <div id="form2">
+               </form>
+                    <input id="firstName2" class="ip" type="text" placeholder="First Name"/>
+                    <input id="lastName2" class="ip" type="text" placeholder="Last Name"/><br><br>
+                    <input id="personAddress2" class="ip2" type="text" placeholder="Address"/><br><br>
+                    <input id="optional2" class="ip2" type="text" placeholder="Unit No. floor Optional"/><br><br>
+                    <input id="personCity2" class="ip" type="text" placeholder="City"/>
+                    <select id="State2"  class="iz" placeholder="State/Region">
+                    <option value="">State/Region</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Las Vegas">Las vegas</option>
+                    <option value="California">California</option>
+                    <option value="Silicon valley">Silicon Valley</option>
+                </select><br><br>
+                <input id="postalcode2" class="ip" type="text" placeholder="ZIP/Postal Code"/>
+                <input id="mobileNo2" class="ip" type="number" placeholder="Phone"/><br><br>
+                <input id="email2" class="ip2" type="email" placeholder="Email"/><br><br>
+               </form>
+            </div>
+            <button id="button" class="Btn">CONTINUE</button>
+        </div>
+        <h3>2.SHIPPING METHOD</h3>
+        <hr>
+        <div id="left2">
+           <h3>Choose one</h3>  
+           <button id="button1" class="Btn2">Standard:<span id="btn1" >9.99  </span></button>
+           <button id="button2" class="Btn2">3 Day: <span id="btn2" >14.99  </span></button>
+           <button id="button3" class="Btn2">2 Day: <span id="btn3" >16.99  </span></button>
+           <button id="button4" class="Btn2">Overnight: <span id="btn4" >21.99  </span></button> 
+           <p id="left2p">Estimated delivery: Mar 18</p>
+           <button id="left2Btn" class="Btn">CONTINUE</button>
+        </div>
+        <h3>3.PAYMENT</h3>
+        <hr>
+        <button id="applyreward">APPLY REWARDS & GIFT CARDS</button>
+        <div id="subdivleft3">
+
+        </div>
+        <div id="left3">
+            <div id="left3pre">
+                
+            </div>
+            <hr>    
+          <div id="left3mid">
+            <p id="left3p">Credit or Debit Card</p>
+            <input class="ip" id="left3input1" type="number" placeholder="Credit Card Number"/>
+            <input class="ip" id="left3input2" type="text" placeholder="MM/YY"/>
+            <input class="ip" id="left3input3" type="number" placeholder="CVV"/>
+          </div>
+            <div id="left3post">
+                <input type="radio" class="radioBtn">
+                <img  src="https://newsroom.paypal-corp.com/image/PayPal_MR_ICON.png" alt="payPallogo"/><br>
+                <input type="radio" class="radioBtn">   
+                <img  src="https://www.therange.co.uk/img/klarna/c1_klarna_banner.jpg" alt="klarnalogo"/>
+                <br>
+                <button id="left3Btn" class="Btn"><a href="./otp.html">PLACE ORDER</a></button>
+            </div>
+        </div>
+    </div>
+     <div id="right">
+        <div>
+            <h3>SUMMARY</h3>
+        </div>
+            <div id="up">
+                <div id="upleft">
+                    <p>Subtotal 🛈</p>
+                    <p>Estimated Shipping 🛈</p>
+                    <p>Estimated Tax 🛈</p>
+                
+                    <p>Total 🛈</p>
+                </div>
+                <div id="upright">
+
+                </div>
+            </div>
+            <div id="down">
+                <p>Items in order [<span id="totalItems"></span>]</p>
+                <h3>SHIP TO ADDRESS</h3>
+                <hr>
+                <div id="subdown">
+
+                </div>
+
+            </div>
+            <div id="ref">
+                <a href="./cartpage.html">Edit Bag</a>
+            </div>
+     </div>
+   </div>
+    
+</body>
+<script >
+   
+    document.querySelector("#button").addEventListener("click", getDetails)
+    var arr= [];
+    var sum = localStorage.getItem("sumof");
+    console.log(sum);
+    function getDetails()
+    {
+        event.preventDefault();
+        var name = document.querySelector("#firstName").value+ " " +document.querySelector("#lastName").value;
+        var add = document.querySelector("#personAddress").value;
+        var optionalAdd = document.querySelector("#optional").value;
+        var city = document.querySelector("#personCity").value;
+        var state = document.querySelector("#State").value;
+        var pincode = document.querySelector("#postalcode").value;
+        var email = document.querySelector("#email").value;
+        var mob = document.querySelector("#mobileNo").value;
+        
+        var name2 = document.querySelector("#firstName2").value+" "+document.querySelector("#lastName2").value;
+        var add2 = document.querySelector("#personAddress2").value;
+        var optionalAdd2 = document.querySelector("#optional2").value;
+        var city2 = document.querySelector("#personCity2").value;
+        var state2 = document.querySelector("#State2").value;
+        var pincode2 = document.querySelector("#postalcode2").value;
+        var email2 = document.querySelector("#email2").value;
+        var mob2 = document.querySelector("#mobileNo2").value;  
+        var addDetails2=JSON.parse(localStorage.getItem("addArr2"))  
+        var obj = 
+        {
+            name:name, add:add, optionalAdd:optionalAdd, city:city, state: state, pincode:pincode, email:email, mob:mob,name2:name2, add2:add2, optionalAdd2:optionalAdd2, city2:city2, state2: state2, pincode2:pincode2, email2:email2, mob2:mob2,
+        };
+        arr.push(obj)
+        localStorage.setItem("addArr",JSON.stringify(arr));    
+        var addDetails=JSON.parse(localStorage.getItem("addArr"))
+        displayDetails(addDetails);
+         if(name==""){
+            alert("fill all the details");
+            return;
+         }      
+    }
+   
+    function displayDetails(arr)
+    {
+            arr.map(function(elem,index){
+            var p1=document.createElement("p");
+            p1.textContent=elem.name;
+            var p2=document.createElement("p");
+            p2.textContent=elem.email;
+            var p3=document.createElement("p");
+            p3.textContent=elem.add;
+            var p4=document.createElement("p");
+            p4.textContent=elem.optionalAdd;
+            var p5=document.createElement("p");
+            p5.textContent=elem.city;
+            var p6=document.createElement("p");
+            p6.textContent=elem.state;
+            var p7=document.createElement("p");
+            p7.textContent=elem.state;
+            var p8=document.createElement("p");
+            p8.textContent=elem.mob; 
+            
+            var p9=document.createElement("p");
+            p9.textContent=elem.name2;
+            var p10=document.createElement("p");
+            p10.textContent=elem.email2;
+            var p11=document.createElement("p");
+            p11.textContent=elem.add2;
+            var p12=document.createElement("p");
+            p12.textContent=elem.optionalAdd2;
+            var p13=document.createElement("p");
+            p13.textContent=elem.city2;
+            var p14=document.createElement("p");
+            p14.textContent=elem.state2;
+            var p15=document.createElement("p");
+            p15.textContent=elem.state2;
+            var p16=document.createElement("p");
+            p16.textContent=elem.mob2;  
+            document.querySelector("#form1").textContent="";
+            document.querySelector("#form1").append(p1,p2,p3,p4,p5,p6,p7,p8);
+            document.querySelector("#form2").textContent="";
+            document.querySelector("#form2").append(p9,p10,p11,p12,p13,p14,p15,p16);
+            
+            let btn = document.querySelector("#button");
+            btn.style.display="none";
+        })
+    }
+            function myFunction() 
+            {
+                var checkBox = document.getElementById("check1");
+                if (checkBox.checked==true){
+                    document.getElementById("form2").textContent="";
+                } 
+                else 
+                {
+                    document.querySelector("#form2").textContent="";
+                    document.querySelector("#form2").append(p9,p10,p11,p12,p13,p14,p15,p16);
+                }
+            }
+
+            document.getElementById("button1").addEventListener("click", fun1)
+            document.getElementById("button2").addEventListener("click", fun2)
+            document.getElementById("button3").addEventListener("click", fun3)
+            document.getElementById("button4").addEventListener("click", fun4)
+            document.getElementById("left2Btn").addEventListener("click",fun5)
+
+            function fun1()
+            {
+                document.getElementById("left2p").textContent="Estimated delivery: Mar 20 - Mar 27";
+                let x = "Standard => Estimated delivery: Mar 20 - Mar 27";
+                localStorage.setItem("shippingMethod",x);
+                let y= document.getElementById("btn1").textContent;
+                localStorage.setItem("shipcharge",y);
+            }
+            function fun2()
+            {
+                document.getElementById("left2p").textContent="Estimated delivery: Mar 20 - Mar 21";
+                let x = "3 Day => Estimated delivery: Mar 20 - Mar 21"
+                localStorage.setItem("shippingMethod",x);
+                let y= document.getElementById("btn2").textContent;
+                localStorage.setItem("shipcharge",y);
+            }
+            function fun3()
+            {
+                document.getElementById("left2p").textContent="Estimated delivery: Mar 19"
+                let x = "2 Day => Estimated delivery: Mar 19"
+                localStorage.setItem("shippingMethod",x);
+                let y= document.getElementById("btn3").textContent;
+                localStorage.setItem("shipcharge",y);
+            }
+            function fun4()
+            {
+                document.getElementById("left2p").textContent="Estimated delivery: Mar 18";
+                let x = "Overnight => Estimated delivery: Today"
+                localStorage.setItem("shippingMethod",x); 
+                let y= document.getElementById("btn4").textContent;
+                localStorage.setItem("shipcharge",y);
+            }
+            function fun5()
+            {
+                let ans = localStorage.getItem("shippingMethod");
+                document.getElementById("left2").textContent=ans;
+            }
+            document.getElementById("applyreward").addEventListener("click", addDiv)
+
+            function addDiv()
+            {
+                document.querySelector("#left3pre").textContent="";
+                var div=document.createElement("div");
+                var input= document.createElement("input");
+                input.setAttribute("placeholder","Reward Number");
+                input.setAttribute("class","ip");
+                var rewardBtn=document.createElement("button");
+                rewardBtn.textContent="APPLY REWARD";
+                rewardBtn.setAttribute("class","Btn");
+                div.append(input,rewardBtn);
+                document.querySelector("#left3pre").append(div)
+                rewardBtn.addEventListener("click",fun6);
+            }
+            function fun6()
+            {
+                document.querySelector("#left3pre").textContent=alert("Reward Applied!!");
+                console.log("reward")
+            }
+
+            // var myCart=JSON.parse(localStorage.getItem("cartProduct"))||[];
+            // showProds();
+            
+            totalAmt();
+            function totalAmt()
+            {
+                // var total= mycart.reduce(function(acc,currEle)
+                // {
+                //     return acc.price+currEle.price;
+                // });
+            //   var=Number(total);
+                var divupright = document.createElement("div");
+                divupright.setAttribute("id","myItems")
+                var pa = document.createElement("p");
+                pa.textContent=sum;
+                var pb = document.createElement("p");
+                var charges=localStorage.getItem("shipcharge");
+                // charges=Number(charges);
+               
+                    pb.textContent=parseInt(charges);
+    
+                
+                var pc = document.createElement("p");
+                pc.textContent=0;
+                var pd = document.createElement("p");
+                var hr= document.createElement("hr");
+               
+                    pd.textContent=parseInt(sum)+parseInt(charges);
+                    
+                
+               
+                divupright.append(pa,pb,pc,hr,pd);
+                document.querySelector("#upright").append(divupright);
+            }
+            var totalitems=localStorage.getItem("length");
+            document.getElementById("totalItems").textContent=totalitems;
+
+            var mycartitems=JSON.parse(localStorage.getItem("cartProduct"));
+            showProds(mycartitems)
+
+            function showProds(arr)
+            {
+                    arr.map(function(ele,index){
+                    var div0Right= document.createElement("div");
+                    div0Right.setAttribute("id","div0");
+                    var div1Right= document.createElement("div");
+                    var div2Right= document.createElement("div");
+                    
+                    var imageR=document.createElement("img");
+                    imageR.setAttribute("src",ele.image_url)
+                    var pright1=document.createElement("p");
+                    pright1.textContent=ele.name;
+                    var pright2=document.createElement("p");
+                    pright2.textContent=ele.price;
+                    div1Right.append(imageR,);
+                    div2Right.append(pright1,pright2);
+                    div0Right.append(div1Right,div2Right)
+                    document.querySelector("#subdown").append(div0Right);
+                })
+            }
+
+
+
+</script>
+</html>
+

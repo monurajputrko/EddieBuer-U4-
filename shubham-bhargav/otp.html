@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Page</title>
+    <style rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        button {
+            margin: 20px;
+            padding: 10px;
+            background-color:black;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color:#454845 ;
+        }
+
+        form {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input{
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 300px;
+            font-size: 16px;
+        }
+        
+        #abba{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        #abba:hover {
+            background-color: #454845;
+        }
+    </style>
+</head>
+<body>
+    <button><a href="./index.html">Home</a></button>
+    <form>
+        <input type="number" id="otp" placeholder="Enter OTP" value="1234">
+        <input id="abba" type="submit">
+    </form>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js">
+    document.querySelector("form").addEventListener("submit", validateOtp)
+
+    function validateOtp() {
+        event.preventDefault()
+        let otp=document.getElementById("otp").value
+        if(otp!="1234" ) {
+            alert("Please enter correct OTP!")
+        }   
+        else {
+            alert("Payment successful!")
+            window.location.assign("./index.html");
+        }
+    }
+</script>
