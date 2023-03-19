@@ -6,6 +6,104 @@
     </head>
     <link href="https://fonts.googleapis.com/css?family=Helvetica+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #outerwear-banner{
+    position: relative;
+}
+
+#outerwear-banner img{
+    width: 100%;
+}
+
+.outerwear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0s ease-in-out;
+}
+
+.outerwear-shop-women-btn {
+    position: absolute;
+    left: 11%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.outerwear-shop-men-btn {
+    position: absolute;
+    left: 23.5%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.outerwear-shop-btn:hover {
+        background-color: #222;
+        color: #fff;
+}
+
+#outerwear-heading{
+    text-align: center;
+}
+
+#outerwear-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#outerwear-card div{
+    flex-basis: calc((100% / 2) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#outerwear-card div img{
+    width: 100%;
+    position: relative;
+}
+
+#outerwear-card2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#outerwear-card2 div{
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#outerwear-card2 div img{
+    width: 100%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 500px) {
+    #outerwear-card div{
+        flex-basis: calc((100%) - 20px);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    #outerwear-card2 div{
+        flex-basis: calc((100%) - 20px);
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+    </style>
 </head>
 <body>
     <header class="ans-header">

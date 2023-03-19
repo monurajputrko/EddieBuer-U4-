@@ -6,6 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>mens</title>
+    <style>
+        #men-banner{
+    position: relative;
+}
+#men-banner img{
+    width: 100%;
+}
+.men-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0s ease-in-out;
+}
+
+.men-shop-women-btn {
+    left: 10.9%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.men-shop-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#men-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    /* margin: 0 auto;
+    padding: 0; */
+}
+
+#men-card div {
+    flex-basis: calc((100% / 3) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#men-card img {
+ width: 100%;
+ display: block;
+}
+
+#men-card div p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    transform: translate(-51%,-51%);
+}
+
+@media screen and (max-width: 768px) {
+    #men-card div {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+}
+@media screen and (max-width: 350px) {
+    #men-card div {
+        flex-basis: calc(100%);
+    }
+}
+    </style>
 </head>
 <body>
     <header class="ans-header">

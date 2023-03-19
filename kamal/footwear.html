@@ -6,6 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footwear</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+.footwear-shop-btn {
+    position: absolute;
+    top: 70%;
+    display: inline-block;
+    padding: 0.9vw 2.2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border: 2px solid #222;
+    transition: all 0s ease-in-out;
+}
+
+.footwear-shop-now-btn {
+    position: absolute;
+    left: 38.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.footwear-shop-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+/* footwear2 buttons */
+#fw2-banner .footwear-shop-women-btn {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#fw2-banner .footwear-shop-men-btn {
+    position: absolute;
+    left: 23.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fttowear3 buttons */
+#fw3-banner .footwear-shop-women-btn {
+    position: absolute;
+    left: 50.5%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+#fw3-banner .footwear-shop-men-btn {
+    position: absolute;
+    left: 62%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/* below flex */
+#footwear-flex .footwear-shop-women-btn {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+#footwear-flex .footwear-shop-men-btn {
+    position: absolute;
+    left: 70%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+/* fw1 */
+#fw1-banner{
+    position: relative;
+}
+
+#fw1-banner div{
+    
+}
+
+#fw1-banner div img{
+    width: 100%;
+}
+
+/* fw2 */
+#fw2-banner{
+    position: relative;
+}
+
+#fw2-banner div{
+    
+}
+
+#fw2-banner div img{
+    width: 100%;
+}
+
+/* fw3 */
+#fw3-banner{
+    position: relative;
+}
+
+#fw3-banner div{
+    
+}
+
+#fw3-banner div img{
+    width: 100%;
+}
+/* footwear heading */
+#footwear-heading{
+    text-align: center;
+}
+
+#footwear-heading h3{
+    font-size: 2.5vw;
+}
+#footwear-heading p{
+    font-size: 1.5vw;
+    margin: 0vw;
+}
+
+/* footwear */
+#footwear-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+#footwear-flex div {
+    flex-basis: calc((100% / 4) - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#footwear-flex div img {
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 750x){
+    #footwear-flex div {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+}
+
+@media screen and (max-width: 375px){
+    #footwear-flex div {
+        flex-basis: calc((100%));
+    }
+}
+    </style>
 </head>
 <body>
     <header class="ans-header">
