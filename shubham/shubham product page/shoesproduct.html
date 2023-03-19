@@ -46,7 +46,7 @@
         <i class="fa fa-search" style="font-size: 22px"></i>
       </div>
       <div class="ans-logoBox">
-        <img src="images/logo.png" alt="" />
+        <img src="logo.png" alt="" />
       </div>
       <div class="cartBox">
         <i class="fa fa-shopping-bag" style="font-size: 24px"></i>
@@ -353,90 +353,192 @@
 
 
 <script>
-
-
-var productarr=[{
+        var productarr=[{
   image_url:"https://eddiebauer.scene7.com/is/image/EddieBauer/D0200149_184C1?$328V1$",
   name: "Women's Guide Pro Hiker",
   price: 144.50,
   MRP: 1150.00,
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
   
 },
 {
   name: "Women's Haller Slip-on",
   price: 44.99,
   MRP: 85.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200041_100C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200041_100C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Womens Chatam Leather Sneaker",
   price: 59.99,
   MRP: 149.80,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200160_100C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200160_100C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Womens's Stine Amphib",
   price: 21.99,
   MRP: 30.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0206000_793C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0206000_793C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Womens Lukla Pro WaterProof LighWeight",
   price: 30.00,
   MRP: 50.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0206029_889C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0206029_889C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Women's Flash Amphib 2.0",
   price: 49.99,
   MRP: 60.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200141_244C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200141_244C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Men's Eddie Amphib",
   price: 49.99,
   MRP: 89.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0194003_488C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0194003_488C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Men's Flash Amphib",
   price: 49.99,
   MRP: 55.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0190079_855C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0190079_855C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Women's Atlas Cloudline Chukka",
   price: 49.99,
   MRP: 60.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200119_373C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0200119_373C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Womens Braek Point Flip Flops",
   price: 49.99,
   MRP: 120.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0206134_041C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0206134_041C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Men's Terrange Hiking Shoe",
   price: 59.99,
   MRP: 78.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0190097_100C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0190097_100C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 },
 {
   name: "Men's Sport Sandals",
   price: 49.99,
   MRP: 60.00,
-  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0190080_100C1?$328V1$"
+  image_url: "https://eddiebauer.scene7.com/is/image/EddieBauer/D0190080_100C1?$328V1$",
+  size : ['3','4','5','6','7','8', '9', '10', '11'],
+        desc : "Now THIS is a sweatshirt. Robust, 380 g/m2 cotton/polyester has the heft you know is going to last no matter how hard you work it. Inside, the fabric is brushed for maximum comfort whether on day one or one thousand. Gender-neutral sizing.",
+        img1: "https://eddiebauer.scene7.com/is/content/EddieBauer/FirstAscent?fmt=svg",
+        img2: "https://eddiebauer.scene7.com/is/content/EddieBauer/UPF50Plus?fmt=svg",
+        img3: "https://eddiebauer.scene7.com/is/content/EddieBauer/StormRepelDWR?fmt=svg",
+        img4: "https://eddiebauer.scene7.com/is/content/EddieBauer/SecurePocket?fmt=svg",
+        img5: "https://eddiebauer.scene7.com/is/content/EddieBauer/Lightweight?fmt=svg",
+        img6: "https://eddiebauer.scene7.com/is/content/EddieBauer/Packable?fmt=svg",
+  
 }]
-
-
-
 
       displayproduct(productarr);
 
-      function displayproduct(){
+      function displayproduct(productarr){
         document.querySelector("#shubh-second-div").textContent="";
-
+        
         productarr.map(function(elem){
 
             var div=document.createElement("div");
@@ -489,8 +591,10 @@ var productarr=[{
 
             btn.addEventListener("click", function(){
                 addto(elem);
-            });
-
+              });
+            div.addEventListener("click",function(){
+                  navToNextPage(elem);
+                });
 
             div.append(image,h4);
             divstar.append(star1, star2, star3, star4, star5);
@@ -499,16 +603,30 @@ var productarr=[{
             document.querySelector("#shubh-second-div").append(pricebox);
         })
       }
+      var product_desc = [];
+          function navToNextPage(product){
+          product_desc.push(product);
+          localStorage.setItem("mensdata",JSON.stringify(product_desc));
+          window.location.href="./pagedis.html";
+      }
+      var cartarr=JSON.parse(localStorage.getItem("cartProduct"))||[];
+            function addto(elem){
+            cartarr.push(elem);
+            console.log(cartarr);
+            localStorage.setItem("cartProduct", JSON.stringify(cartarr));
+        }
+
+
+
 
       const selectElement = document.querySelector('#shubh-refine');
-
-      selectElement.addEventListener('change', (event) => {
-          const selectedOptionValue = event.target.value;
-          if (selectedOptionValue !== '') {
-          window.location.href = selectedOptionValue;
-          console.log(selectedOptionValue);
-      }
-    });
+         selectElement.addEventListener('change', (event) => {
+            const selectedOptionValue = event.target.value;
+            if (selectedOptionValue !== '') {
+            window.location.href = selectedOptionValue;
+            console.log(selectedOptionValue);
+          }
+      });
 
     
     function sortprice(){
@@ -516,7 +634,6 @@ var productarr=[{
       if(selected==='Price Low to High'){
         productarr=productarr.sort(function(a,b) {
           return a.price-b.price;
-          
         })
       }
       if(selected==='Price High to Low'){
@@ -527,4 +644,65 @@ var productarr=[{
       displayproduct(productarr);
     }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
