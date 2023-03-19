@@ -1,7 +1,12 @@
 let addedTocart=JSON.parse(localStorage.getItem("cartProduct"))||[]
+var xyz=localStorage.getItem("sumof");
 document.getElementById("items").textContent="Total Items :"+addedTocart.length
 var sum= addedTocart.reduce((acc,el)=>parseInt(acc)+parseInt(el.price),0);
-document.getElementById("price").textContent="Total Price :"+sum   
+localStorage.setItem("sumof",sum);
+var x = addedTocart.length;
+localStorage.setItem("length",x)
+
+document.getElementById("price").textContent="Total Price :"+sum 
          displayCartItems (addedTocart)
            console.log("hi")
          function displayCartItems (addedTocart){
