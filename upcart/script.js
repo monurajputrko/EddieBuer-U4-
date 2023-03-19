@@ -1,7 +1,5 @@
 let addedTocart=JSON.parse(localStorage.getItem("cartProduct"))||[]
 document.getElementById("items").textContent="Total Items :"+addedTocart.length
-var xm=addedTocart.length;
-localStorage.setItem("cartProduct", JSON.stringify(cartarr));
 var sum= addedTocart.reduce((acc,el)=>parseInt(acc)+parseInt(el.price),0);
 document.getElementById("price").textContent="Total Price :"+sum   
          displayCartItems (addedTocart)
@@ -10,7 +8,7 @@ document.getElementById("price").textContent="Total Price :"+sum
            document.getElementById("body").textContent=""
            addedTocart.map(function(el,i){
             // var div1=document.createElement("div");
-            // var div=document.createElement("div");
+            // var divm=document.createElement("div");
             var image=document.createElement("img");
             image.setAttribute("src",el.image_url);
             image.setAttribute("alt",el.name);
@@ -24,19 +22,67 @@ document.getElementById("price").textContent="Total Price :"+sum
               td2.textContent=el.price
 
               // let td3=document.createElement("td")
-              // td3.textContent=el.strikedoffprice
+              
+              
+              var span=document.createElement("span");
+              span.textContent=" "+"1";
 
-              let td3=document.createElement("td")
-              td3.textContent="Delete"
-              td3.addEventListener("click",function(){
+
+              let td4=document.createElement("td")
+              td4.textContent="Delete"
+              td4.setAttribute("id","del")
+              td4.addEventListener("click",function(){
                deleteProduct(el,i)
+
+               var increase=document.createElement("td");
+               increase.setAttribute("id","btn")
+                  increase.textContent="increase";
+                  increase.addEventListener("click",function(){
+                    increaseval(span.textContent);
+                  });
+
+                  var decrease=document.createElement("td");
+                  decrease.setAttribute("id","btn")
+                  decrease.textContent="decr";
+                  decrease.addEventListener("click",function(){
+                    decreaseval(span.textContent);
+                  });
               })
-              let td5=document.createElement("td")
+       
+                 function increaseval(value){
+                  var pr=parseInt(value)+1;
+                  var va=pr*(elem.price);
+                  span.textContent=pr;
+                  price.textContent="₹"+va;
+                  var a= document.getElementById("pr").textContent;
+                 var last=parseInt(a)+parseInt(elem.price);
+                 document.getElementById("pr").textContent=last;
+      
+              }
+
+             
+        function decreaseval(value){
+          if(value==1){
+              return ;
+           }else{
+          var pr=parseInt(value)-1;
+          var va=pr*elem.price
+          span.textContent=pr;
+            price.textContent="₹"+va;
+        var a= document.getElementById("pr").textContent;
+     var last=parseInt(a)-parseInt(elem.price);
+      document.getElementById("pr").textContent=last;
+      }
+          }
+
+
+              // let td5=document.createElement("td")
 
               var image=document.createElement("img");
                 image.setAttribute("src",el.image_url);
                 image.setAttribute("alt",el.name);
-              tr.append(image,td1,td2,td3)
+              //  divm.append(increase,span,decrease)
+              tr.append(image,td1,td2, td4)
                 // div.append(tr)
               document.getElementById("body").append(tr)
            })

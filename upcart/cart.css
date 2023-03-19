@@ -1,0 +1,157 @@
+#info{
+    /* border: 3px solid black; */
+        float:right;
+        margin-right: 100px;
+        background-color: #f7f7f7;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+    img{
+        width: 100px;
+    }
+    /* #form{
+       
+        margin-left: 250px;
+        margin-top: 100px;
+    } */
+    #paymentLink{
+        margin-left: 250px;
+        margin-top: 100px;
+    }
+    table {
+        /* margin-left: 2%; */
+        /* border: 2px solid rgb(0, 0, 0); */
+        background-color: #ffffff;
+        border-collapse: collapse;
+        width: 100%;
+}
+#tdiv{
+    width: 51%;
+    /* border: 2px solid black; */
+    margin-left: 10%;
+}
+td, th {
+    width: 100px;
+    /* border: 2px solid rgb(0, 0, 0); */
+text-align: left;
+padding: 8px;
+}
+
+.mscenter {
+margin: auto;
+/* margin-top: -5%; */
+width: 60%;
+/* border: 3px solid #73AD21; */
+padding: 10px;
+align-items: center;
+}
+#msub{
+    margin-left: 25%;
+    margin-top: 12%;
+    padding: 7% 19%;
+    color: rgb(255, 255, 255);
+background-color: black;
+}
+#carp{
+    text-align: center;
+}
+#promo{
+    margin-left: 0%;
+    margin-top: 5%;
+    width: 113%;
+    height: 40px;
+    text-align: center;
+}
+#items{
+text-align: right;
+}
+#tbl{
+float: right;
+}
+#ms{
+display: inline-flex;
+margin-right:36%;
+margin-left: -8%
+
+}
+#mor{
+margin-left:37%;
+/* margin-left: -8% */
+}
+#mbg{
+    display: inline-flex;
+margin-right:15%;
+margin-left: -8%;
+}
+#mobg{
+    display: inline-flex;
+margin-right:45%;
+margin-left: -8%
+}
+#msbg{
+    display: inline-flex;
+margin-right:35%;
+margin-left: -8%
+}
+#items{
+display: inline-flex;
+
+}
+#price{
+display: inline-flex;
+}
+#msdiv{
+border: 2px solid black;
+width: 70%;
+}
+#btnms {
+text-decoration: none;
+margin-left: 5%;
+padding: 3px 75px;
+color: rgb(255, 255, 255);
+background-color: black;
+}
+
+#btnms1 {
+text-decoration: none;
+margin-left: 5%;
+padding: 3px 67px;
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+}
+
+#btnms > a{
+text-decoration: none;
+color: #f7f7f7;
+}
+#btnms1 > a{
+text-decoration: none;
+color: #000000;
+}
+#msform{
+float:right;
+        margin-right: 100px;
+}
+#btnms:hover {
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+}
+#btnms:hover a{
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+}
+#msub:hover a{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    }
+#btnms1:hover {
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+#btnms1:hover a{
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+#del:hover{
+    color: red;
+}
