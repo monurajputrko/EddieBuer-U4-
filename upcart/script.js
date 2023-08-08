@@ -5,7 +5,7 @@ document.getElementById("price").textContent="Total Price :"+sum
          displayCartItems (addedTocart)
            console.log("hi")
          function displayCartItems (addedTocart){
-           document.getElementById("body").textContent=""
+          // document.getElementById("body").textContent=""
            addedTocart.map(function(el,i){
             // var div1=document.createElement("div");
             // var divm=document.createElement("div");
